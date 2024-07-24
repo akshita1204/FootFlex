@@ -3,7 +3,6 @@ import 'package:client_application/pages/login_page.dart';
 import 'package:client_application/widget/otp_text_field.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:otp_text_field_v2/otp_field_v2.dart';
 
 class RegisterPage extends StatelessWidget {
   const RegisterPage({super.key});

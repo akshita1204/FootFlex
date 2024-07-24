@@ -14,11 +14,11 @@ class ProductDescriptionPage extends StatelessWidget {
     return GetBuilder<PurchaseController>(builder: (ctrl){
     return Scaffold(
       appBar: AppBar(
-        title: Text('Footware Store',style:TextStyle(
+        title: const Text('Footware Store',style:TextStyle(
         fontWeight: FontWeight.bold,
       )),
       actions: [
-        IconButton(onPressed: (){}, icon: Icon(Icons.logout)),
+        IconButton(onPressed: (){}, icon: const Icon(Icons.logout)),
       ],
       ),
 
@@ -51,7 +51,7 @@ class ProductDescriptionPage extends StatelessWidget {
 
           Text(
             product.description??'',
-            style:TextStyle(
+            style:const TextStyle(
               fontSize: 16,
               height: 1.5,
              )
@@ -86,7 +86,7 @@ class ProductDescriptionPage extends StatelessWidget {
             width:double.infinity,
             child:ElevatedButton(
               style:ElevatedButton.styleFrom(
-                padding: EdgeInsets.symmetric(vertical: 15),
+                padding: const EdgeInsets.symmetric(vertical: 15),
                 backgroundColor: Colors.purple,    
               ),
               child:const Text('Buy Now',style:TextStyle(fontSize: 18,color:Colors.white)),   

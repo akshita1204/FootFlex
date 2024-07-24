@@ -4,7 +4,6 @@ import 'package:client_application/models/user/user.dart';
 import 'package:client_application/pages/home_page.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/semantics.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:otp_text_field_v2/otp_field_v2.dart';

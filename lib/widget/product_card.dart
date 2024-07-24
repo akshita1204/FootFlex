@@ -29,11 +29,11 @@ class ProductCard extends StatelessWidget {
             ),
             
 
-            SizedBox(height: 9),
-            Text(name,style:TextStyle(fontSize: 16),overflow:TextOverflow.ellipsis),
-            SizedBox(height: 9),
-            Text('Rs.$price',style:TextStyle(fontSize: 16),overflow:TextOverflow.ellipsis),
-            SizedBox(height: 4),
+            const SizedBox(height: 9),
+            Text(name,style:const TextStyle(fontSize: 16),overflow:TextOverflow.ellipsis),
+            const SizedBox(height: 9),
+            Text('Rs.$price',style:const TextStyle(fontSize: 16),overflow:TextOverflow.ellipsis),
+            const SizedBox(height: 4),
             Container(
               padding: const EdgeInsets.symmetric(horizontal: 8),
               decoration: BoxDecoration(
@@ -42,7 +42,7 @@ class ProductCard extends StatelessWidget {
               ),
               child: Text(
                 offerTag,
-                style:TextStyle(color: Colors.white,fontSize: 12),
+                style:const TextStyle(color: Colors.white,fontSize: 12),
               ),
             )
           ],),

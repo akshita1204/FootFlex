@@ -20,15 +20,15 @@ class HomePage extends StatelessWidget {
       },
       child: Scaffold(
       appBar: AppBar(
-        title: Text('Footware Store',style:TextStyle(
+        title: const Text('Footware Store',style:TextStyle(
           fontWeight: FontWeight.bold,
         )),
         actions: [
           IconButton(onPressed: (){
             GetStorage box =GetStorage();
             box.erase();
-            Get.offAll(LoginPage());
-          }, icon: Icon(Icons.logout)),
+            Get.offAll(const LoginPage());
+          }, icon: const Icon(Icons.logout)),
         ],
       ),
       
@@ -56,7 +56,7 @@ class HomePage extends StatelessWidget {
           children: [
             Flexible(
            child: DropDownBtn(
-              items:['Price low to high','Price high to low'],
+              items:const ['Price low to high','Price high to low'],
               SelectedItemText:'Sort',
              onSelecetd: (selected ) { 
               ctrl.sortByPrice(ascending:selected=='Price low to high' ?true:false, );
@@ -64,7 +64,7 @@ class HomePage extends StatelessWidget {
             ),
             ),
            Flexible(
-            child: MultiSelectDropDown(items:['Adidas','Puma','Sketchers','Sparks'],
+            child: MultiSelectDropDown(items:const ['Adidas','Puma','Sketchers','Sparks'],
            onSelecetionChanged: (selectedItems) {  
             ctrl.filterByBrand(selectedItems);
            },)
@@ -76,7 +76,7 @@ class HomePage extends StatelessWidget {
         
           
       Expanded(
-            child: GridView.builder(gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2,
+            child: GridView.builder(gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2,
             childAspectRatio: 0.8,
             crossAxisSpacing: 8,
             mainAxisSpacing: 8
@@ -89,7 +89,7 @@ class HomePage extends StatelessWidget {
                 price: ctrl. productShowInUI[index].price??00,
                  offerTag: '30% Off',
                   onTap: (){
-                   Get.to(ProductDescriptionPage(),arguments: {'data':ctrl.productShowInUI[index]});
+                   Get.to(const ProductDescriptionPage(),arguments: {'data':ctrl.productShowInUI[index]});
                   },);
              }),
         ),

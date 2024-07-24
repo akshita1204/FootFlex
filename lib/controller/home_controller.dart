@@ -1,7 +1,6 @@
 import 'package:client_application/models/product/product.dart';
 import 'package:client_application/models/product_category/product_category.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
